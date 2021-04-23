@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            background-color: azure;
+        }
+        .rubik{
+            transform-style: preserve-3d;
+            transform: translatey(500px) rotateX(-30deg) rotateY(50deg) rotateZ(10deg);
+            margin: auto;
+        }
+        /* .rubik:hover{
+            animation: spin 5s timing-function 1s infinite;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        } */
+        .side{
+            position: absolute;
+            display: block;
+        }
+        .row{
+            display: flex;
+        }
+        @keyframes spin{
+            0%{}
+            100%{}
+        }
+        /* Side */
+        .white{
+            transform-origin: top;
+            transform: rotateX(90deg);
+        }
+        .yellow{
+            transform-origin: bottom;
+            transform: rotateX(-90deg);
+        }
+        .orange{
+            transform-origin: left;
+            transform: rotateY(-90deg);
+        }
+        .red{
+            transform-origin: right;
+            transform: rotateY(90deg);
+        }
+        .green{
+            transform-origin: center;
+            transform: translateZ(330px);
+        }
+        .blue{
+
+        }
+        /* fill color */
+        #white{
+            background-color: white;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+        /* Unit of side */
+        .one{
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 3px black
+        }
+        .two{
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 3px black
+        }
+        .three{
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 3px black
+        }
+    </style>
+</head>
+<body>
+    <div class = 'rubik'>
+        <div class = 'side white'>
+            <div class = 'row'>
+                <div class = 'one' id = 'white'></div>
+                <div class = 'two' id = 'white'></div>
+                <div class = 'three' id = 'white'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'white'></div>
+                <div class = 'two' id = 'white'></div>
+                <div class = 'three' id = 'white'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'white'></div>
+                <div class = 'two' id = 'white'></div>
+                <div class = 'three' id = 'white'></div>
+            </div>
+        </div>
+        <div class = 'side yellow'>
+            <div class = 'row'>
+                <div class = 'one' id = 'yellow'></div>
+                <div class = 'two' id = 'yellow'></div>
+                <div class = 'three' id = 'yellow'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'yellow'></div>
+                <div class = 'two' id = 'yellow'></div>
+                <div class = 'three' id = 'yellow'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'yellow'></div>
+                <div class = 'two' id = 'yellow'></div>
+                <div class = 'three' id = 'yellow'></div>
+            </div>
+        </div>
+        <div class = 'side orange'>
+            <div class = 'row'>
+                <div class = 'one' id = 'orange'></div>
+                <div class = 'two' id = 'orange'></div>
+                <div class = 'three' id = 'orange'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'orange'></div>
+                <div class = 'two' id = 'orange'></div>
+                <div class = 'three' id = 'orange'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'orange'></div>
+                <div class = 'two' id = 'orange'></div>
+                <div class = 'three' id = 'orange'></div>
+            </div>
+        </div>
+        <div class = 'side red'>
+            <div class = 'row'>
+                <div class = 'one' id = 'red'></div>
+                <div class = 'two' id = 'red'></div>
+                <div class = 'three' id = 'red'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'red'></div>
+                <div class = 'two' id = 'red'></div>
+                <div class = 'three' id = 'red'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'red'></div>
+                <div class = 'two' id = 'red'></div>
+                <div class = 'three' id = 'red'></div>
+            </div>
+        </div>
+        <div class = 'side green'>
+            <div class = 'row'>
+                <div class = 'one' id = 'green'></div>
+                <div class = 'two' id = 'green'></div>
+                <div class = 'three' id = 'green'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'green'></div>
+                <div class = 'two' id = 'green'></div>
+                <div class = 'three' id = 'green'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'green'></div>
+                <div class = 'two' id = 'green'></div>
+                <div class = 'three' id = 'green'></div>
+            </div>
+        </div>
+        <div class = 'side blue'>
+            <div class = 'row'>
+                <div class = 'one' id = 'blue'></div>
+                <div class = 'two' id = 'blue'></div>
+                <div class = 'three' id = 'blue'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'blue'></div>
+                <div class = 'two' id = 'blue'></div>
+                <div class = 'three' id = 'blue'></div>
+            </div>
+            <div class = 'row'>
+                <div class = 'one' id = 'blue'></div>
+                <div class = 'two' id = 'blue'></div>
+                <div class = 'three' id = 'blue'></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
