@@ -8,26 +8,24 @@
             justify-items: center;
             align-items: center;
             background-color: azure;
+            transform: translateX(-150px) translateY(250px);
         }
         .rubik{
+            transform-origin: 165px 165px 165px;
             transform-style: preserve-3d;
-            transform: translatey(500px) rotateX(-30deg) rotateY(50deg) rotateZ(10deg);
+            transform: rotateX(-20deg) rotateY(40deg) rotateZ(0deg);
+            transition: all 3s;
             margin: auto;
         }
-        /* .rubik:hover{
-            animation: spin 5s timing-function 1s infinite;
-            animation: name duration timing-function delay iteration-count direction fill-mode;
-        } */
+        .rubik:hover{
+            transform: rotateX(-380deg) rotateY(400deg) rotateZ(360deg);
+        }
         .side{
             position: absolute;
             display: block;
         }
         .row{
             display: flex;
-        }
-        @keyframes spin{
-            0%{}
-            100%{}
         }
         /* Side */
         .white{
@@ -61,16 +59,16 @@
             background-color: yellow;
         }
         #orange{
-            background-color: orange;
+            background-color: rgb(255, 145, 0);
         }
         #red{
-            background-color: red;
+            background-color: orangered;
         }
         #green{
-            background-color: green;
+            background-color: rgb(30, 221, 30);
         }
         #blue{
-            background-color: blue;
+            background-color: rgb(0, 110, 255);
         }
         /* Unit of side */
         .one{
